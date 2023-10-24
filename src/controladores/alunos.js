@@ -12,7 +12,7 @@ const listarAlunos = async (req, res) => {
     }
 };
 
-//faz o cadastro de um novo aluno no sistema inserindo todos os dados obrigatórios no corpo da requisição
+//Faz o cadastro de um novo aluno no sistema inserindo todos os dados obrigatórios no corpo da requisição
 const cadastrarAluno = async (req, res) => {
     const { nome, idade, primeira_nota, segunda_nota, professor_nome, sala } = req.body;
 
@@ -37,7 +37,7 @@ const cadastrarAluno = async (req, res) => {
     }
 };
 
-//faz a busca de um aluno no sistema a partir do id do aluno informado como parâmetro de rota
+//Faz a busca de um aluno no sistema a partir do id do aluno informado como parâmetro de rota
 const obterAluno = async (req, res) => {
     const { id }  = req.params;
 
@@ -54,7 +54,7 @@ const obterAluno = async (req, res) => {
     }
 }
 
-//faz a atualização das informações de um aluno no sistema informando os campos a serem alterados no corpo da requisição
+//Faz a atualização das informações de um aluno no sistema informando os campos a serem alterados no corpo da requisição
 const atualizarAluno = async (req, res) => {
     const { id } = req.params;
     const { nome, idade, primeira_nota, segunda_nota, professor_nome, sala } = req.body;
@@ -124,7 +124,7 @@ const atualizarAluno = async (req, res) => {
     }
 };
 
-//faz a exclusão do cadastro de um aluno no sistema a partir do id do aluno informado como parâmetro de rota
+//Faz a exclusão do cadastro de um aluno no sistema a partir do id do aluno informado como parâmetro de rota
 const excluirAluno = async (req, res) => {
     const { id } = req.params;
 
