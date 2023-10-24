@@ -2,11 +2,15 @@ const express = require('express');
 const { listarAlunos, cadastrarAluno, obterAluno, atualizarAluno, excluirAluno } = require('./controladores/alunos');
 const rotas = express();
 
+rotas.get('/', (req, res) => {
+    res.send('Teste de rota');
+})
+
 //faz uma listagem de todos os alunos cadastrados no sistema
 rotas.get('/alunos', listarAlunos);
 
 //faz o cadastro de um novo aluno
-rotas.post('/cadastro', cadastrarAluno);
+rotas.post('/alunos/cadastro', cadastrarAluno);
 
 //faz a busca de um aluno no sistema pelo id do aluno
 rotas.get('/alunos/:id', obterAluno);
