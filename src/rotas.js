@@ -6,32 +6,32 @@ rotas.get('/', (req, res) => {
     res.send(
 `
 Página inicial do servidor.
-
-GET /alunos
-//faz uma listagem de todos os alunos cadastrados no sistema
-
-POST /alunos
-//faz o cadastro de um novo aluno
-
-exemplo de request body json:
-{
-    "nome": "José",
-    "idade": "30",
-    "primeira_nota": "75,00",
-    "segunda_nota": "80,00",
-    "professor_nome": "Maria",
-    "sala": "A"
-}
-
-GET /alunos/:id
-//faz a busca de um aluno no sistema pelo ID do aluno
-
-PUT /alunos/:id
-//faz a atualização das informações de um aluno no sistema
-
-DELETE /alunos/:id
-//faz a exclusão do cadastro de um aluno no sistema pelo ID do aluno
-`
+\n
+\nGET /alunos
+\n//faz uma listagem de todos os alunos cadastrados no sistema
+\n
+\nPOST /alunos
+\n//faz o cadastro de um novo aluno
+\n
+\nexemplo de request body json:
+\n{
+    \n"nome": "José",
+    \n"idade": "30",
+    \n"primeira_nota": "75,00",
+    \n"segunda_nota": "80,00",
+    \n"professor_nome": "Maria",
+    \n"sala": "A"
+\n}
+\n
+\nGET /alunos/:id
+\n//faz a busca de um aluno no sistema pelo ID do aluno
+\n
+\nPUT /alunos/:id
+\n//faz a atualização das informações de um aluno no sistema
+\n
+\nDELETE /alunos/:id
+\n//faz a exclusão do cadastro de um aluno no sistema pelo ID do aluno
+\n`
 );
 
 })
