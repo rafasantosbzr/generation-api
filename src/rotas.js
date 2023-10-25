@@ -2,6 +2,9 @@ const express = require('express');
 const { listarAlunos, cadastrarAluno, obterAluno, atualizarAluno, excluirAluno } = require('./controladores/alunos');
 const rotas = express();
 
+rotas.get('/', (req, res) => {
+    res.send('Bem vindo ao servidor')
+})
 //faz uma listagem de todos os alunos cadastrados no sistema
 rotas.get('/alunos', listarAlunos);
 
