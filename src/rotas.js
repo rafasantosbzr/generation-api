@@ -3,7 +3,7 @@ const { listarAlunos, cadastrarAluno, obterAluno, atualizarAluno, excluirAluno }
 const rotas = express();
 
 rotas.get('/', (req, res) => {
-    res.send('Bem vindo ao servidor')
+    res.send('Página inicial do servidor.');
 })
 //faz uma listagem de todos os alunos cadastrados no sistema
 rotas.get('/alunos', listarAlunos);

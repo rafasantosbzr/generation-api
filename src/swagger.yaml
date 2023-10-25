@@ -6,7 +6,7 @@
     "version" : "1.0.0"
   },
   "servers" : [ {
-    "url" : "https://virtserver.swaggerhub.com/rafasantosbzr/desafio/1.0.0",
+    "url" : "https://app.swaggerhub.com/apis-docs/rafasantosbzr/crud_de_alunos/1.0.0#/",
     "description" : "SwaggerHub API Auto Mocking"
   }, {
     "url" : "https://sistema-escolar-generation.cyclic.cloud/",
@@ -19,6 +19,12 @@
         "responses" : {
           "200" : {
             "description" : "Sucesso"
+            "content" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/Aluno"
+              }
+            }
+          }
           }
         }
       },
