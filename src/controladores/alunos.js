@@ -1,10 +1,10 @@
 const knex = require('../conexao');
 
-//faz uma listagem de todos os alunos cadastrados no sistema
+//Faz uma listagem de todos os alunos cadastrados no sistema
 const listarAlunos = async (req, res) => {
     
     try {
-        const alunos = await knex("alunos");
+        const alunos = await knex('alunos');
         
         return res.status(200).json(alunos);
     } catch (error) {

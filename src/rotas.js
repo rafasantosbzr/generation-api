@@ -6,7 +6,7 @@ const rotas = express();
 rotas.get('/alunos', listarAlunos);
 
 //faz o cadastro de um novo aluno
-rotas.post('/alunos/cadastro', cadastrarAluno);
+rotas.post('/alunos', cadastrarAluno);
 
 //faz a busca de um aluno no sistema pelo id do aluno
 rotas.get('/alunos/:id', obterAluno);
