@@ -3,7 +3,7 @@ const { listarAlunos, cadastrarAluno, obterAluno, atualizarAluno, excluirAluno }
 const rotas = express();
 
 rotas.get('/', (req, res) => {
-    res.send('Página inicial do servidor.\nGET /alunos\n//faz uma listagem de todos os alunos cadastrados no sistema\nPOST /alunos\n//faz o cadastro de um novo aluno\nexemplo de request body json:\n{\n"nome": "José",\n"idade": "30",\n"primeira_nota": "75,00",\n"segunda_nota": "80,00",\n"professor_nome": "Maria",\n"sala": "A"\n}\nGET /alunos/:id\n//faz a busca de um aluno no sistema pelo ID do aluno\nPUT /alunos/:id\n//faz a atualização das informações de um aluno no sistema\nDELETE /alunos/:id\n//faz a exclusão do cadastro de um aluno no sistema pelo ID do aluno\n');
+    res.send('Página inicial do servidor.');
 
 })
 //faz uma listagem de todos os alunos cadastrados no sistema
