@@ -5,25 +5,15 @@
     "description": "Sistema de cadastro de alunos através de operações de CRUD",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "sistema-escolar-generation.cyclic.cloud",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
-    "/": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/alunos": {
       "get": {
-        "description": "",
+        "description": "Permite cadastrar um novo aluno no sistema",
         "responses": {
           "200": {
             "description": "OK"
@@ -34,7 +24,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Permite cadastrar um novo aluno no sistema",
         "parameters": [
           {
             "name": "body",
@@ -43,22 +33,22 @@
               "type": "object",
               "properties": {
                 "nome": {
-                  "example": "any"
+                  "example": "Enzo"
                 },
                 "idade": {
-                  "example": "any"
+                  "example": "16"
                 },
                 "primeira_nota": {
-                  "example": "any"
+                  "example": "60,00"
                 },
                 "segunda_nota": {
-                  "example": "any"
+                  "example": "75,00"
                 },
                 "professor_nome": {
-                  "example": "any"
+                  "example": "Mauro Leite"
                 },
                 "sala": {
-                  "example": "any"
+                  "example": "B"
                 }
               }
             }
@@ -79,7 +69,7 @@
     },
     "/alunos/{id}": {
       "get": {
-        "description": "",
+        "description": "Permite exibir as informações de um aluno específico no sistema",
         "parameters": [
           {
             "name": "id",
@@ -101,7 +91,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Permite atualizar as informações de um aluno no sistema",
         "parameters": [
           {
             "name": "id",
@@ -116,22 +106,22 @@
               "type": "object",
               "properties": {
                 "nome": {
-                  "example": "any"
+                  "example": "Ana Paula"
                 },
                 "idade": {
-                  "example": "any"
+                  "example": "14"
                 },
                 "primeira_nota": {
-                  "example": "any"
+                  "example": "80,00"
                 },
                 "segunda_nota": {
-                  "example": "any"
+                  "example": "67,00"
                 },
                 "professor_nome": {
-                  "example": "any"
+                  "example": "Tiago Neves"
                 },
                 "sala": {
-                  "example": "any"
+                  "example": "C"
                 }
               }
             }
@@ -153,7 +143,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Permite excluir o cadastro de um aluno no sistema",
         "parameters": [
           {
             "name": "id",
